@@ -1,0 +1,145 @@
+body {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 100px;
+}
+
+table {
+
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+}
+
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table th.sort {
+    cursor: pointer;
+}
+
+table tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #6557f5;
+    color: white;
+}
+
+button {
+    margin: 0 5px;
+}
+
+.dropbtn, button.delete, button.update-status {
+    background-color: #ebebeb;
+    color: black;
+    padding: 5px 16px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+button.delete {
+    background-color: #db0000;
+    color: white;
+}
+
+button.update-status {
+    color: black;
+    background-color: #ebebeb;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    /*background-color: #f1f1f1*/
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    /*background-color: #3e8e41;*/
+}
+
+.status {
+    padding: 5px 10px;
+    /*font-size: 11px;*/
+}
+
+.status-1 {
+    background-color: #db0000;
+    color: white;
+}
+
+.status-2 {
+    background-color: #ff7c00;
+    color: white;
+}
+
+.status-3 {
+    background-color: #bbeeff;
+}
+
+.status-4 {
+    background-color: #dfdfdf;
+}
+
+input[type=text] {
+    width: calc(100% - 124px);
+    margin: 8px 0;
+    margin-right: 20px;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100px;
+    background-color: #2caafd;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:disabled {
+    background-color: #9ad6fd;
+    cursor: not-allowed;
+}
