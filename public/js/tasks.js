@@ -121,7 +121,7 @@ function getAllTasks(field) {
                                 <button class="dropbtn"><i class="fa fa-pencil-square" aria-hidden="true"></i> Change priority</button>
                                 <div class="dropdown-content">
                                     ${PRIORITIES.map(priority => {
-                                        return '<a href="javascript:void(0)" onclick="changePriority(' + result.id + ', priority.value)">' + getPriorityLabel(priority.value) + '</a>';
+                                        return `<a href="javascript:void(0)" onclick="changePriority(${result.id}, ${priority.value})">${getPriorityLabel(priority.value)}</a>`;
                                     }).join('')}
                                 </div>
                             </div>
